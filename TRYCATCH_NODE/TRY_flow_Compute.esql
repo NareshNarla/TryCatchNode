@@ -1,0 +1,26 @@
+
+
+CREATE COMPUTE MODULE TRY_flow_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		SET OutputRoot.XMLNSC.EMPLOYEE.USERDETAILS = InputRoot.XMLNSC.EMPLOYEE.USER;
+		SET OutputRoot.XMLNSC.EMPLOYEE.USERID = InputRoot.XMLNSC.EMPLOYEE.NUM;
+		SET OutputLocalEnvironment.Destination.MQ.DestinationData[1].queueName = 'CD';
+		SET OutputLocalEnvironment.Destination.MQ.DestinationData[2].queueNmae = 'EF';
+		SET Environment.folder = InputRoot.XMLNSC;
+		
+		
+		
+		RETURN TRUE;
+		END;
+END MODULE;
+
+
+
+
+--<EMPLOYEE><USER>ASHOK</USER><NUM>1234</NUM></EMPLOYEE>
+--<EMPLOYEE><USERDETAILS>ASHOK</USERDETAILS><USERID>1234</USERID></EMPLOYEE>
+		
+		
+	
