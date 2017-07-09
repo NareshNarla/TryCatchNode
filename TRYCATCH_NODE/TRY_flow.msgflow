@@ -13,9 +13,6 @@
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="196,87" computeExpression="esql://routine/#TRY_flow_Compute.Main">
         <translation xmi:type="utility:ConstantString" string="Compute"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="164,183" filePath="C:\TEMP\INBOUND\Madhu" pattern="${Root}&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;${Environment}&#xD;&#xA;${ExceptionList}&#xD;&#xA;">
-        <translation xmi:type="utility:ConstantString" string="Trace"/>
-      </nodes>
       <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="148,9" filePath="C:\TEMP\INBOUND\Madhu" pattern="${Root}&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;${Environment}&#xD;&#xA;${ExceptionList}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;${ExceptionList}&#xD;&#xA;${Root}&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;${Environment}&#xD;&#xA;${ExceptionList}&#xD;&#xA;">
         <translation xmi:type="utility:ConstantString" string="Trace1"/>
       </nodes>
@@ -44,7 +41,6 @@
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.try" targetTerminalName="InTerminal.in"/>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_9" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.try" targetTerminalName="InTerminal.in"/>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
-      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_10" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
     </composition>
     <propertyOrganizer/>
