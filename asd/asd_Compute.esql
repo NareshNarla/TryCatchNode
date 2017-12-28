@@ -6,5 +6,7 @@ CREATE COMPUTE MODULE asd_Compute
 		DECLARE asd CHARACTER CAST(X'01' AS CHARACTER CCSID 1208);
 	    SET Environment.ZXC = asd ;
 	    SET Environment.qwe='123';
+	    SET Environment.xcv='456';
+	    
 	END;
 END MODULE;
